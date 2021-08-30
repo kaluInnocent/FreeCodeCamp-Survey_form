@@ -1,0 +1,72 @@
+<p><label for<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <Header>
+      <h1 id="title">FreeCodeCamp Survey Form</h1>
+        <p id="discription">Thank you for taking the time to help us improve the platform</p>
+    </header>
+    <div>
+      <form id="survey-form">
+        <p id="name-label">
+        <label for="name">Name</label><br>
+          <input type="text" id="name" name="Full Name" placeholder="Enter your name"></p>
+        <p id="email-label">
+          <label for="email">Email</label><br>
+          <input type="email" id="email" name="email" placeholder="Enter your Email">
+          </p>
+        <p id="number-label"><label for="number">Age</label><br>
+          <input type="number" id="number" name="age" min="0" max="100" placeholder="Age"> <br>
+        </p>
+        <p>
+          <label for="dropdown">Which option best describes your current role?</label><br>
+          <select id="dropdown" name="dropdown">
+            <option value="Student">Student</option>
+            <option value="Full Time Job">Full Time Job</option>
+            <option value="Full Time Learner">Full Time Learner</option>
+            <option value="Prefer Not To Say">Prefer Not To Say</option>
+            <option value="Other" selected>Others</option>
+          </select>
+        </p> 
+        <p>Would you recommend FreeCodeCamp to a friend?</p>
+        <input type="radio" id="yes" name="recommend" value="yes">
+          <label for="yes">Yes</label><br>
+        <input type="radio" id="no" name="recommend" value="no">
+          <label for="no">No</label><br>
+        <input type="radio" id="maybe" name="maybe" value="maybe">
+        <label for="maybe">Maybe</label><br>
+        <input type="radio" id="notsure"name="notsure" value="notsure">
+        <label for="notsure">Not sure</label>
+        </P>
+      <p>What would you like to see improved? (Check all that apply)<br>
+      <input type="checkbox" id="front-end" name="front-end" value="front-end">
+      <label for="front-end"> Front-end Projects</label><br>
+      <input type="checkbox" id="back-end" name="back-end" value="back-end">
+      <label for="back-end"> Back-end Projects</label><br>
+      <input type="checkbox" id="visualization" name="visuals" value="visualization">
+      <label for="visualization">Data Visualization</label><br>
+        <input type="checkbox" id="challenges" name="challenges" value="challenges">
+        <label for="challenges">Challenges</label><br>
+        <input type="checkbox" id="videos" name="videos" value="videos">
+        <label for="videos">Videos</label><br>
+        <input type="checkbox" id="forum" name="forum" value="forum">
+        <label for="forum">Forum</label><br>
+        <input type="checkbox" id="courses" name="courses" value="courses">
+        <label for="courses">Additional Courses</label>
+      </P>
+      <p>
+        <label for="comments">Any Comments or suggestions?</label><br>
+        <textarea id="comments" name="comments" row="20" cols="50" placeholder="Enter your comments here . . ."></textarea>
+      </p>
+    <p>
+      <button type="submit" value="submit" id="submit">Submit</button>
+    </p>
+      </form>
+    </div>
+  </body>
+</html>
